@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>혼인요건 구비 증명서</title>
+	<style>
+		/* Provided CSS from a4.css */
+		body {
+			background: rgb(204,204,204);
+			/* Set Korean default font */
+			font-family: 'Malgun Gothic', '맑은 고딕', 'Dotum', sans-serif;
+			line-height: 1.8;
+		}
+		page {
+			background: white;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 0.5cm;
+			box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+		}
+		.wrapper {
+			padding: 3cm;
+			padding-top: 1.5cm;
+		}
+		page[size="A4"] {  
+			width: 21cm;
+			height: 29.7cm; 
+		}
+		@media print {
+			body, page {
+				margin: 0;
+				box-shadow: 0;
+			}
+		}
+
+		/* Custom styles to replicate the document layout */
+		.doc-header {
+			text-align: right;
+
+			padding-right: 1em;
+			color: #333;
+		}
+		.doc-title {
+			text-align: center;
+			font-size: 2.0em;
+			font-weight: bold;
+			letter-spacing: 0.8em;
+			padding-left: 1.5em; /* Compensate for letter-spacing on the last character */
+			margin-bottom: 1.2em;
+		}
+		.info-table {
+			width: 100%;
+			margin-bottom: 1em;
+			border-collapse: collapse;
+		}
+		.info-table td {
+			vertical-align: top;
+		}
+		.info-table td:first-child {
+			width: 110px; /* Fixed width for labels */
+		}
+		.cert-text {
+			margin: 2em 0;
+		}
+		.fiance-title {
+			font-size: 1.1em;
+			font-weight: bold;
+			margin-top: 1em;
+		}
+		.issuer-block {
+			margin-top: 1em;
+		}
+		.issuer-date {
+			text-align: center;
+			margin-bottom: 1em;
+		}
+		.issuer-info {
+			text-align: center;
+			font-size: 1.2em;
+		}
+		.issuer-name {
+			font-size: 1.5em;
+      letter-spacing: 0.2em;
+			font-weight: bold;
+			margin: 0 1em;
+		}
+		.seal-placeholder {
+			/* Placeholder for the red seal */
+			color: #C00;
+			font-weight: normal;
+		}
+	</style>
+</head>
+<body>
+	<page size="A4">
+		<div class="wrapper">
+			<div id="one">
+				<br>
+        <br>
+				<p class="doc-header">10호적 10 제100호</p>
+				<h1 class="doc-title">증 명 서</h1>
+
+				<table class="info-table">
+					<tbody>
+						<tr>
+							<td>등록기준지</td>
+							<td>○○현 ○○군 ○○정 ○○ ○○○번지<br>
+								야마다 타로</td>
+						</tr>
+						<tr>
+							<td>출 생 지</td>
+							<td>○○도 ○○구</td>
+						</tr>
+						<tr>
+							<td>부</td>
+							<td>야마다 타로</td>
+						</tr>
+						<tr>
+							<td>모</td>
+							<td>야마다 하나코</td>
+						</tr>
+						<tr>
+							<td>관 계</td>
+							<td>차녀</td>
+						</tr>
+						<tr>
+							<td>성 명</td>
+							<td>야마다 사쿠라</td>
+						</tr>
+						<tr>
+							<td>생년월일</td>
+							<td>1990년  1월 1일생</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<p class="cert-text">
+					2020년 1월 1일, ○○현 ○○군 ○○정장이 진정하게 작성하였음을 인정한 호적 전부사항증명서에 따르면, 위 사람은 독신이며 혼인할 능력을 갖추고 있고, 혼인하는 데 있어 일본법상 어떠한 장애도 없음을 증명함.
+				</p>
+				
+				<h2 class="fiance-title">혼인 상대방</h2>
+				<table class="info-table">
+					<tbody>
+						<tr>
+							<td>국적·지역</td>
+							<td>대한민국</td>
+						</tr>
+						<tr>
+							<td>성 명</td>
+							<td>홍길동 (HONG GILDONG)</td>
+						</tr>
+						<tr>
+							<td>생년월일</td>
+							<td>1990년 1월 1일</td>
+						</tr>
+						<tr>
+							<td>성 별</td>
+							<td>남성</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="issuer-block">
+					<p class="issuer-date">2020년 1월 1일</p>
+					<div class="issuer-info">
+						<span>○○ 법무국장</span>
+						<span class="issuer-name">다나카 이치로</span>
+						<span class="seal-placeholder">[인]</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</page>
+</body>
+</html>
