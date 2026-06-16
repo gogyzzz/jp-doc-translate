@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>家族関係証明書（詳細）</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    body {
+      font-family: 'Hiragino Mincho ProN', 'Yu Mincho', 'MS Mincho', serif;
+      font-size: 10pt;
+      background: rgb(204,204,204);
+      margin: 0;
+      padding: 0;
+    }
+    .page {
+      background: white;
+      width: 21cm;
+      height: 29.7cm;
+      margin: 0 auto 0.5cm;
+      box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+      padding: 1.8cm 2cm;
+      box-sizing: border-box;
+      position: relative;
+    }
+    @media print {
+      body { background: white; }
+      .page { margin: 0; box-shadow: none; }
+    }
+    h1 {
+      text-align: center;
+      font-size: 18pt;
+      letter-spacing: 0.5em;
+      margin: 0 0 1.2em 0;
+      font-weight: bold;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.8em;
+      font-size: 9.5pt;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 5px 8px;
+      vertical-align: middle;
+    }
+    th {
+      background: #f5f5f5;
+      font-weight: bold;
+      text-align: center;
+      white-space: nowrap;
+    }
+    td { text-align: center; }
+    td.left { text-align: left; }
+    .section-label {
+      border: 1px solid #000;
+      display: inline-block;
+      padding: 3px 12px;
+      margin: 0.6em 0 0.4em 0;
+      font-weight: bold;
+      font-size: 10pt;
+    }
+    .reg-table td:first-child { width: 5em; font-weight: bold; text-align: center; }
+    .dead-badge {
+      display: inline-block;
+      border: 1px solid #000;
+      font-size: 8pt;
+      padding: 1px 4px;
+      margin-left: 4px;
+      vertical-align: middle;
+    }
+    .nationality-cell { font-size: 8.5pt; line-height: 1.6; }
+    .cert-text {
+      margin: 1.2em 0 0.4em 0;
+      font-size: 9.5pt;
+      line-height: 1.8;
+    }
+    .cert-date {
+      text-align: center;
+      font-size: 10pt;
+      margin: 0.6em 0;
+    }
+    .issuer {
+      text-align: center;
+      font-size: 11pt;
+      font-weight: bold;
+      margin: 0.4em 0 1.2em 0;
+    }
+    .footnote {
+      font-size: 8.5pt;
+      line-height: 1.7;
+      margin-top: 0.6em;
+    }
+    .issue-info {
+      text-align: right;
+      font-size: 9pt;
+      margin-top: 0.6em;
+    }
+    .doc-footer {
+      position: absolute;
+      bottom: 1cm;
+      left: 2cm;
+      right: 2cm;
+      font-size: 7.5pt;
+      color: #333;
+      border-top: 1px solid #ccc;
+      padding-top: 4px;
+    }
+  </style>
+</head>
+<body>
+<div class="page">
+  <h1>家族関係証明書（詳細）</h1>
+
+  <table class="reg-table">
+    <tr>
+      <td>登録基準地</td>
+      <td class="left">○○道○○郡○○邑○○里○○番地</td>
+    </tr>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>区分</th>
+        <th>氏&nbsp;&nbsp;名</th>
+        <th>生年月日</th>
+        <th>住民登録番号</th>
+        <th>性別</th>
+        <th>本</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>本人</td>
+        <td>○○・○○○○</td>
+        <td>XXXX年XX月XX日</td>
+        <td>XXXXXX-XXXXXXX</td>
+        <td>男</td>
+        <td>安東</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-label">家族事項</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>区分</th>
+        <th>氏&nbsp;&nbsp;名</th>
+        <th>生年月日</th>
+        <th>住民登録番号</th>
+        <th>性別</th>
+        <th>本</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>父</td>
+        <td>○○・○○○○<span class="dead-badge">死亡</span></td>
+        <td>XXXX年XX月XX日</td>
+        <td>XXXXXX-XXXXXXX</td>
+        <td>男</td>
+        <td>安東</td>
+      </tr>
+      <tr>
+        <td>母</td>
+        <td>○○・○○○</td>
+        <td>XXXX年XX月XX日</td>
+        <td>XXXXXX-XXXXXXX</td>
+        <td>女</td>
+        <td>光山</td>
+      </tr>
+      <tr>
+        <td>配偶者</td>
+        <td>○○○○</td>
+        <td>XXXX年XX月XX日</td>
+        <td class="nationality-cell">
+          国籍：日本<br>XXXXXX-XXXXXXX
+        </td>
+        <td>女</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p class="cert-text">
+    上記家族関係証明書（詳細）は、家族関係登録簿の記録事項と相違ないことを証明します。
+  </p>
+  <p class="cert-date">XXXX年XX月XX日</p>
+  <p class="issuer">法院行政処　電算情報中央管理所　電算運営責任官　○○○</p>
+
+  <p class="footnote">
+    ※ 本証明書は「家族関係の登録等に関する法律」第15条第3項に基づく登録事項を現出した詳細証明書です。
+  </p>
+
+  <div class="issue-info">
+    発給時刻：XX時XX分<br>
+    申請人：○○・○○○○
+  </div>
+
+  <div class="doc-footer">
+    発行番号：XXXX-XXXX-XXXX-XXXX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1 / 1<br>
+    ※ 電子家族関係登録システム（https://efamily.scourt.go.kr）の証明書真偽確認メニューにて、発給日から3ヶ月以内に偽変造の有無を確認できます。
+  </div>
+</div>
+</body>
+</html>
